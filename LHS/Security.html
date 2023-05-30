@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sit next to each other */
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+button {
+  background-color: dimgray;
+  color: whitesmoke;
+  font-family: georgia;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="rfid.png" alt="RFID" style="width:100%">
+    <button onclick="rfid()" type="button" class="magenta">PRESS HERE TO SCAN RFID</button>
+    <script>
+      function rfid() {
+        window.location.href = "rfid login.html";
+      }
+    </script>
+  </div>
+
+  <div class="column">
+    <img src="fingerprint.png" alt="Fingerprint" style="width:100%">
+    <button onclick="biometric()" type="button" class="magenta">PRESS HERE TO SCAN FINGERPRINT</button>
+    <script>
+      function biometric() {
+        window.location.href = "bio login.html";
+      }
+    </script>
+  </div>
+</div>
+
+</body>
+</html>

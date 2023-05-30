@@ -1,0 +1,58 @@
+.header-label {
+	font-size: 50px; /* Adjust the font size as needed */
+	color: black;
+	background-color: #27AE60; /* Set the header background color to a shade of green */
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	width: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border: 1px solid #ccc; /* set the border style and color */
+	padding: 1px; /* add some padding to the label */
+	border-radius: 25px; /* adjust the value to increase or decrease the roundness */
+	padding: 10px 20px;
+	
+  }
+  
+  main {
+	background-color: #27AE60; /* Set the main background color to a light gray */
+	padding: 20px;
+	border: 1px solid white; /* set the border style and color */
+	padding: 10px; /* add some padding to the label */
+	
+  }
+  
+  .enrollment-form {
+	background-color: #27AE60; /* Set the enrollment form background color to a darker shade of green */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 25px; /* adjust the value to increase or decrease the roundness */
+	padding: 10px 20px;
+}
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #2ECC71; /* Set the input borders to a shade of green */
+	border-radius: 4px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .button-container {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+  }
+  
+  input[type="submit"] {
+	border-radius: 25px; /* adjust the value to increase or decrease the roundness */
+	padding: 10px 20px; /* adjust the padding to fit your button text */
+	background-color: #4CAF50; /* set the background color */
+	color: white; /* set the text color */
+	border: none; /* remove the border */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* add a shadow effect */
+  }
+  

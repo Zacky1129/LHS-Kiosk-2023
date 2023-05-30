@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Print Button Example</title>
+    <style>
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Print Button Example</h1>
+
+    <button
+      onclick="redirectToFolder('C:/Users/jekje/Documents/GoodMoral.pdf')"
+    >
+      PRESS TO CHOOSE WHAT DOCUMENT TO PRINT
+    </button>
+    <script>
+      function redirectToFolder() {
+        // Redirect the user to the specific folder where documents are saved
+        window.location.href = "C:/Users/jekje/Documents/GoodMoral.pdf";
+      }
+
+      function printDocument(file) {
+        // Print the selected document using the CUPS printing system
+        // For example, on Linux, you can use the lp command
+        const printer = "Printer Name"; // Replace with the name of the printer you want to use
+        const command = `lp -d "${printer}" "${file}"`;
+        const shell = require("child_process").exec(command);
+        shell.on("exit", function (code, signal) {
+          if (code === 0) {
+            console.log("Print job submitted successfully");
+          } else {
+            console.log("Print job submission failed");
+          }
+        });
+      }
+
+      function handleFileChange(event) {
+        const file = event.target.files[0];
+        if (file) {
+          printDocument(file.path);
+          window.location.href = "/enroll.html";
+        }
+      }
+
+      // Add event listener to the file input element
+      const input = document.createElement("input");
+      input.type = "file";
+      input.style.display = "none";
+      input.addEventListener("change", handleFileChange);
+      document.body.appendChild(input);
+    </script>
+  </body>
+</html>

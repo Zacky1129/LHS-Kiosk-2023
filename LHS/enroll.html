@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="sample style.css"> 
+   
+    <label class="header-label">Enrollment</label>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport">
+
+
+<body style="background-color: gray;">
+  
+  <label style="font-size:30px">
+    <br>
+    <form action="enroll.php" method="POST" class="enrollment-form">
+      <label for="rfid">RFID: </label>
+      <input type="number" placeholder="Enter RFID" id="rfid" name="rfid" required><br>
+      <label for="grlvl">Grade Level: </label>
+      <input type="number" placeholder="Enter Grade Level" id="grlvl" name="grlvl" required><br>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter Name" id="name" name="name" required><br>
+      <label for="address">Address:</label>
+      <input type="text" placeholder="Enter your Address" id="address" name="address"><br>
+      <label for="bday">Date of Birth:</label>
+      <input type="date" placeholder="Enter Birthday" id="bday" name="bday" required><br>
+      <label for="contact">Contact Number:</label>
+      <input type="number" placeholder="Enter Contact Number" id="contact" name="contact"
+        required><br>
+      <label for="gender">Gender:</label>
+      <input type="text" placeholder="Enter Gender" id="gender" name="gender" required><br>
+      <label for="email">Email:</label>
+      <input type="text" placeholder="Enter Email" id="email" name="email" required><br>
+      <label for="bio">Fingerprint: </label>
+      <input type="number" placeholder="Enter Fingerprint" id="bio" name="bio" required><br>
+
+
+<div class="button-container">
+  <input type="submit" value="SUBMIT ENROLLMENT">
+</div>
+    </form>
+</body>
+</html>

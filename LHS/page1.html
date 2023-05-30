@@ -1,0 +1,82 @@
+<!DOCTYPE html/>
+<html>
+  <title>Welcome to Lagro High School</title>
+  <head>
+  	<link rel="stylesheet" href="sample style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <style>  
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50.00%;
+  padding: 5px;
+} 
+      button {
+        background-color: dimgray;
+        color: whitesmoke;
+        font-family: georgia;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+  
+
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    </style>
+  </head>
+  <body style="background-color: #04aa6d">
+
+      
+        <img src="lhsunif.png" alt="Lagro High School Uniform"  style="width:100%;">
+<div class="flex-parent jc-center">
+  <button onclick="redirectToPage()" type="Old">OLD STUDENT</button>
+  <script>
+      function redirectToPage() {
+                            window.location.href = "Security.html";
+                        }
+                    </script>
+
+  </div>
+  
+  <button onclick="redirectToEnrollment()" type="New">NEW STUDENT</button>
+  <script>
+      function redirectToEnrollment() {
+                            window.location.href = "enroll.html";
+                        }
+                    </script>
+
+  </div>
+</div>
+
+        
+      </div>
+    </form>
+  </body>
+</html>
